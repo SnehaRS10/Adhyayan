@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Quiz</title>
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>DSA Quiz</h1>
+            <div class="timer">Time Left: <span id="time">4:58</span></div>
+        </header>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <main>
+            <div class="question-container">
+                <h2>Question</h2>
+                <div class="question">
+                    <p id="question-text">Loading question...</p>
+                    <ul id="options-list"></ul>
+                </div>
+                <div class="controls">
+                    <button id="skip">Skip</button>
+                    <button id="save-next">Save & Next</button>
+                </div>
+            </div>
+            <div class="question-status">
+                <h3>Questions Status</h3>
+                <div class="status-grid">
+                </div>
+                <div class="legend">
+                    <span class="attempted"><span class="circle"></span> Attempted</span>
+                    <span class="not-attempted"><span class="circle"></span> Not Attempted</span>
+                </div>                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

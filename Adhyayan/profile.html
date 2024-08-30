@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhyayan - Student Portal</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- source https://gist.github.com/dsursulino/369a0998c0fc8c25e19962bce729674f -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <div class="bg-orange-100 min-h-screen">
+      <!-- Navbar -->
+      <div class="fixed bg-white text-blue-800 px-10 py-1 z-10 w-full">
+        <div class="flex items-center justify-between py-2 text-5x1">
+          <a
+            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              ></path>
+            </svg>
+            <span class="ml-3 text-xl">Adhyayan</span>
+          </a>
+          <div class="flex items-center text-gray-500">
+            <span class="material-icons-outlined p-2" style="font-size: 30px"
+              >search</span
+            >
+            <span class="material-icons-outlined p-2" style="font-size: 30px"
+              >notifications</span
+            >
+            <div
+              class="bg-center bg-cover bg-no-repeat rounded-full inline-block h-12 w-12 ml-2"
+              style="
+                background-image: url(https://i.pinimg.com/564x/de/0f/3d/de0f3d06d2c6dbf29a888cf78e4c0323.jpg);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex flex-row pt-24 px-10 pb-4">
+        <!-- Sidebar -->
+        <div class="w-2/12 mr-6">
+          <div class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4">
+            <a
+              href="lobby.html"
+              class="inline-block text-gray-600 hover:text-black my-4 w-full"
+            >
+              <span class="material-icons-outlined float-left pr-2"
+                >dashboard</span
+              >
+              Digital Classroom
+              <span class="material-icons-outlined float-right"
+                >keyboard_arrow_right</span
+              >
+            </a>
+
+            <a
+              href="quizIndex.html"
+              class="inline-block text-gray-600 hover:text-black my-4 w-full"
+            >
+              <span class="material-icons-outlined float-left pr-2">tune</span>
+              Take a Test
+              <span class="material-icons-outlined float-right"
+                >keyboard_arrow_right</span
+              >
+            </a>
+            <a
+              href=""
+              class="inline-block text-gray-600 hover:text-black my-4 w-full"
+            >
+              <span class="material-icons-outlined float-left pr-2"
+                >file_copy</span
+              >
+              Library
+              <span class="material-icons-outlined float-right"
+                >keyboard_arrow_right</span
+              >
+            </a>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4">
+            <a
+              href=""
+              class="inline-block text-gray-600 hover:text-black my-4 w-full"
+            >
+              <span class="material-icons-outlined float-left pr-2">face</span>
+              Profile
+              <span class="material-icons-outlined float-right"
+                >keyboard_arrow_right</span
+              >
+            </a>
+            <a
+              href=""
+              class="inline-block text-gray-600 hover:text-black my-4 w-full"
+            >
+              <span class="material-icons-outlined float-left pr-2"
+                >settings</span
+              >
+              Settings
+              <span class="material-icons-outlined float-right"
+                >keyboard_arrow_right</span
+              >
+            </a>
+            <a
+              href=""
+              class="inline-block text-gray-600 hover:text-black my-4 w-full"
+            >
+              <span class="material-icons-outlined float-left pr-2"
+                >power_settings_new</span
+              >
+              Log out
+              <span class="material-icons-outlined float-right"
+                >keyboard_arrow_right</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="w-10/12">
+          <!-- Welcome Section -->
+          <div class="flex flex-row">
+            <div
+              class="bg-no-repeat bg-red-200 border border-red-300 rounded-xl w-7/12 mr-2 p-6"
+              style="
+                background-image: url(https://previews.dropbox.com/p/thumb/AAvyFru8elv-S19NMGkQcztLLpDd6Y6VVVMqKhwISfNEpqV59iR5sJaPD4VTrz8ExV7WU9ryYPIUW8Gk2JmEm03OLBE2zAeQ3i7sjFx80O-7skVlsmlm0qRT0n7z9t07jU_E9KafA9l4rz68MsaZPazbDKBdcvEEEQPPc3TmZDsIhes1U-Z0YsH0uc2RSqEb0b83A1GNRo86e-8TbEoNqyX0gxBG-14Tawn0sZWLo5Iv96X-x10kVauME-Mc9HGS5G4h_26P2oHhiZ3SEgj6jW0KlEnsh2H_yTego0grbhdcN1Yjd_rLpyHUt5XhXHJwoqyJ_ylwvZD9-dRLgi_fM_7j/p.png?fv_content=true&size_mode=5);
+                background-position: 90% center;
+              "
+            >
+              <p class="text-5xl text-indigo-900">
+                Welcome <br /><strong>Sneha</strong>
+              </p>
+              <span
+                class="bg-red-300 text-xl text-white inline-block rounded-full mt-12 px-8 py-2"
+                ><strong>01:51</strong></span
+              >
+            </div>
+            <!-- Progress Graph -->
+            <div class="mt-12">
+              <canvas id="progressGraph"></canvas>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative pt-1 mt-6">
+              <div
+                class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-orange-200"
+              >
+                <div
+                  style="width: 70%"
+                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <script>
+            const ctx = document
+              .getElementById("progressGraph")
+              .getContext("2d");
+            const progressGraph = new Chart(ctx, {
+              type: "line",
+              data: {
+                labels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5"], // Change these labels to actual dates
+                datasets: [
+                  {
+                    label: "Score",
+                    data: [65, 59, 80, 81, 56], // Replace these numbers with actual scores
+                    backgroundColor: "rgba(255, 165, 0, 0.2)",
+                    borderColor: "rgba(255, 165, 0, 1)",
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.4,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                  },
+                },
+              },
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

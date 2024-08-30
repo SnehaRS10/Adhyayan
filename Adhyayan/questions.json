@@ -1,0 +1,602 @@
+[
+    {
+        "question": "What is a data structure?",
+        "options": [
+            "A way of organizing data that considers not only the items stored but also the relationship to each other",
+            "A mathematical representation of data",
+            "A collection of data elements",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    },
+    {
+        "question": "Which of the following is not a linear data structure?",
+        "options": [
+            "Arrays",
+            "Linked Lists",
+            "Trees",
+            "Stacks"
+        ],
+        "answer": "Trees"
+    },
+    {
+        "question": "Which of the following data structure is non-linear type?",
+        "options": [
+            "Queue",
+            "Graph",
+            "Deque",
+            "Array"
+        ],
+        "answer": "Graph"
+    },
+    {
+        "question": "What is the time complexity of inserting an element in the stack?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "What is the worst-case time complexity of linear search algorithm?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "answer": "O(n)"
+    },
+    {
+        "question": "Which data structure is best suited for searching an element?",
+        "options": [
+            "Linked List",
+            "Array",
+            "Stack",
+            "Binary Search Tree"
+        ],
+        "answer": "Binary Search Tree"
+    },
+    {
+        "question": "What is the primary usage of a queue data structure?",
+        "options": [
+            "Sorting elements",
+            "Accessing elements randomly",
+            "Implementation of recursion",
+            "Managing tasks and processes"
+        ],
+        "answer": "Managing tasks and processes"
+    },
+    {
+        "question": "Which of the following sorting algorithms has the lowest time complexity in most cases?",
+        "options": [
+            "Bubble Sort",
+            "Merge Sort",
+            "Quick Sort",
+            "Insertion Sort"
+        ],
+        "answer": "Quick Sort"
+    },
+    {
+        "question": "What is the time complexity of the Quick Sort algorithm in the worst case?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "answer": "O(n^2)"
+    },
+    {
+        "question": "What data structure is typically used for implementing a LIFO (Last In First Out) approach?",
+        "options": [
+            "Queue",
+            "Linked List",
+            "Stack",
+            "Binary Tree"
+        ],
+        "answer": "Stack"
+    },
+    {
+        "question": "What is the average time complexity of inserting an element in a hash table assuming uniform hashing?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following is a dynamic data structure?",
+        "options": [
+            "Array",
+            "Linked List",
+            "Stack",
+            "Queue"
+        ],
+        "answer": "Linked List"
+    },
+    {
+        "question": "Which of the following data structures is used to implement recursion?",
+        "options": [
+            "Array",
+            "Linked List",
+            "Stack",
+            "Queue"
+        ],
+        "answer": "Stack"
+    },
+    {
+        "question": "What data structure is typically used for implementing a FIFO (First In First Out) approach?",
+        "options": [
+            "Stack",
+            "Heap",
+            "Queue",
+            "Binary Search Tree"
+        ],
+        "answer": "Queue"
+    },
+    {
+        "question": "What is the time complexity of the Binary Search algorithm?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "What data structure is used to efficiently find the minimum and maximum elements?",
+        "options": [
+            "Array",
+            "Stack",
+            "Linked List",
+            "Heap"
+        ],
+        "answer": "Heap"
+    },
+    {
+        "question": "What data structure is used to represent hierarchical relationships?",
+        "options": [
+            "Graph",
+            "Heap",
+            "Queue",
+            "Array"
+        ],
+        "answer": "Graph"
+    },
+    {
+        "question": "Which of the following is a search algorithm?",
+        "options": [
+            "Bubble Sort",
+            "Linear Search",
+            "Insertion Sort",
+            "Merge Sort"
+        ],
+        "answer": "Linear Search"
+    },
+    {
+        "question": "What data structure is typically used for implementing a priority queue?",
+        "options": [
+            "Heap",
+            "Stack",
+            "Queue",
+            "Linked List"
+        ],
+        "answer": "Heap"
+    },
+    {
+        "question": "What is the time complexity of accessing an element in an array?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which sorting algorithm is known for its stability?",
+        "options": [
+            "Quick Sort",
+            "Heap Sort",
+            "Merge Sort",
+            "Bubble Sort"
+        ],
+        "answer": "Merge Sort"
+    },
+    {
+        "question": "What is the time complexity of the Bubble Sort algorithm in the worst case?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "answer": "O(n^2)"
+    },
+    {
+        "question": "What is the primary use of the Heap data structure?",
+        "options": [
+            "To find the median of a list of numbers",
+            "To implement a stack",
+            "To manage tasks in a round-robin scheduler",
+            "To implement a priority queue"
+        ],
+        "answer": "To implement a priority queue"
+    },
+    {
+        "question": "Which data structure is typically used for efficient searching and inserting in a dynamic set?",
+        "options": [
+            "Hash Table",
+            "Array",
+            "Linked List",
+            "Stack"
+        ],
+        "answer": "Hash Table"
+    },
+    {
+        "question": "What is the time complexity of deleting an element from a heap?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "What data structure is typically used for implementing an adjacency list?",
+        "options": [
+            "Array",
+            "Heap",
+            "Queue",
+            "Linked List"
+        ],
+        "answer": "Linked List"
+    },
+    {
+        "question": "Which of the following data structures is suitable for implementing Dijkstra's algorithm?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Binary Search Tree"
+        ],
+        "answer": "Heap"
+    },
+    {
+        "question": "What is the space complexity of the Merge Sort algorithm?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(n)"
+    },
+    {
+        "question": "Which of the following is an example of a divide and conquer algorithm?",
+        "options": [
+            "Bubble Sort",
+            "Merge Sort",
+            "Insertion Sort",
+            "Selection Sort"
+        ],
+        "answer": "Merge Sort"
+    },
+    {
+        "question": "What data structure is typically used for implementing a hash table?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Array"
+        ],
+        "answer": "Array"
+    },
+    {
+        "question": "Which of the following is not a characteristic of a binary search tree?",
+        "options": [
+            "Each node has at most two children",
+            "Nodes are sorted in ascending order",
+            "Left subtree of a node contains only nodes with keys less than the node's key",
+            "Right subtree of a node contains only nodes with keys greater than the node's key"
+        ],
+        "answer": "Nodes are sorted in ascending order"
+    },
+    {
+        "question": "What is the time complexity of inserting an element in a binary search tree?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "What is the primary usage of a trie data structure?",
+        "options": [
+            "To implement dynamic memory allocation algorithms",
+            "To implement string searching algorithms",
+            "To implement stack-based algorithms",
+            "To manage tasks and processes"
+        ],
+        "answer": "To implement string searching algorithms"
+    },
+    {
+        "question": "Which of the following is not an application of a stack data structure?",
+        "options": [
+            "Expression evaluation",
+            "Backtracking",
+            "Tree traversal",
+            "Managing function calls"
+        ],
+        "answer": "Tree traversal"
+    },
+    {
+        "question": "What is the time complexity of finding an element in a hash table with open addressing?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following data structures is typically used for implementing a disjoint-set data structure?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Union-Find"
+        ],
+        "answer": "Union-Find"
+    },
+    {
+        "question": "What is the time complexity of finding the minimum element in a min-heap?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "What data structure is typically used for implementing an AVL tree?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Binary Search Tree"
+        ],
+        "answer": "Binary Search Tree"
+    },
+    {
+        "question": "Which of the following data structures is typically used for implementing an undirected graph?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Adjacency List"
+        ],
+        "answer": "Adjacency List"
+    },
+    {
+        "question": "What is the space complexity of the Quick Sort algorithm?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "Which of the following is a stable sorting algorithm?",
+        "options": [
+            "Quick Sort",
+            "Heap Sort",
+            "Merge Sort",
+            "Selection Sort"
+        ],
+        "answer": "Merge Sort"
+    },
+    {
+        "question": "What is the time complexity of deleting an element from a binary search tree?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "What data structure is typically used for implementing a breadth-first search (BFS)?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Heap",
+            "Linked List"
+        ],
+        "answer": "Queue"
+    },
+    {
+        "question": "What is the time complexity of inserting an element in a doubly linked list?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following is not a characteristic of a heap data structure?",
+        "options": [
+            "Complete binary tree",
+            "Binary tree",
+            "Heap order property",
+            "Binary search property"
+        ],
+        "answer": "Binary search property"
+    },
+    {
+        "question": "What is the time complexity of finding an element in an AVL tree?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "Which of the following data structures is typically used for implementing a prefix tree?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Trie"
+        ],
+        "answer": "Trie"
+    },
+    {
+        "question": "What is the time complexity of deleting an element from a stack?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following is a divide and conquer algorithm?",
+        "options": [
+            "Bubble Sort",
+            "Merge Sort",
+            "Insertion Sort",
+            "Quick Sort"
+        ],
+        "answer": "Merge Sort"
+    },
+    {
+        "question": "What is the time complexity of deleting an element from a queue?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following data structures is used for representing a collection of elements with key values?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Hash Table"
+        ],
+        "answer": "Hash Table"
+    },
+    {
+        "question": "What is the time complexity of deleting an element from a linked list?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "What data structure is typically used for implementing a Red-Black tree?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Stack",
+            "Binary Search Tree"
+        ],
+        "answer": "Binary Search Tree"
+    },
+    {
+        "question": "Which of the following data structures is typically used for implementing a depth-first search (DFS)?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Heap",
+            "Linked List"
+        ],
+        "answer": "Stack"
+    },
+    {
+        "question": "What is the time complexity of finding an element in a singly linked list?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(n)"
+    },
+    {
+        "question": "Which of the following is not a characteristic of a linked list?",
+        "options": [
+            "Dynamic size",
+            "Sequential access",
+            "Nodes hold data and pointer to next element",
+            "Insertions and deletions can be done in constant time"
+        ],
+        "answer": "Sequential access"
+    },
+    {
+        "question": "What is the time complexity of finding an element in a hash table with chaining?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following data structures is typically used for implementing a max-heap?",
+        "options": [
+            "Array",
+            "Linked List",
+            "Binary Search Tree",
+            "Heap"
+        ],
+        "answer": "Array"
+    },
+    {
+        "question": "What is the time complexity of inserting an element in a hash table with chaining?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n log n)"
+        ],
+        "answer": "O(1)"
+    },
+    {
+        "question": "Which of the following is not a characteristic of a queue data structure?",
+        "options": [
+            "First-In-First-Out (FIFO) order",
+            "Linear data structure",
+            "Elements are added at the rear and removed from the front",
+            "Elements are added at the front and removed from the rear"
+        ],
+        "answer": "Elements are added at the front and removed from the rear"
+    }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "adhyayan",
+  "version": "1.0.0",
+  "description": "- Multiple-choice questions loaded from a JSON file.\r - Timer functionality with automatic submission on timeout.\r - Question status tracking (attempted/not attempted).\r - Dynamic progress bar indicating quiz completion.\r - Responsive design for various screen sizes.",
+  "main": "result-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}

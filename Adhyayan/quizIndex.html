@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-DSA Quiz</title>
+    <link rel="stylesheet" href="quiz_index_styles.css">
+    <!-- Add Material Icons and Tailwind CSS for styling -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        /* Ensure the content doesn't overlap with the navbar */
+        .content {
+          padding-top: 4rem; /* Adjust this value as needed */
+        }
+      </style>
+</head>
+<body>
+    <div class="bg-orange-100 min-h-screen">
+    <!-- Navbar -->
+    <div class="fixed bg-white text-blue-800 px-10 py-1 z-10 w-full">
+        <div class="flex items-center justify-between py-2 text-5x1">
+            <a
+                class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+            >
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
+                viewBox="0 0 24 24"
+                >
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                ></path>
+                </svg>
+                <span class="ml-3 text-xl">Adhyayan</span>
+            </a>
+            <div class="flex items-center text-gray-500">
+                <span class="material-icons-outlined p-2" style="font-size: 30px"
+                >search</span
+                >
+                <span class="material-icons-outlined p-2" style="font-size: 30px"
+                >notifications</span
+                >
+                <div
+                class="bg-center bg-cover bg-no-repeat rounded-full inline-block h-12 w-12 ml-2"
+                style="
+                    background-image: url(https://i.pinimg.com/564x/de/0f/3d/de0f3d06d2c6dbf29a888cf78e4c0323.jpg);
+                "
+                ></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-container pt-24"> <!-- Add padding to avoid overlap with navbar -->
+        <header>
+            <h1 style="color: #ff6600">Welcome to the DSA Quiz</h1>
+        </header>
+        <main>
+            <p>This quiz will test your knowledge in Data Strutures.</p>
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Once started, the quiz cannot be paused.</li>
+                <li>You can toggle between questions using the navigation buttons.</li>
+                <li>Use "Skip" to move to the next question without answering.</li>
+                <li>Use "Save & Next" to answer the current question and move to the next.</li>
+            </ul>
+            <button id="start-quiz">Start Quiz</button>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('start-quiz').addEventListener('click', () => {
+            window.location.href = 'quiz.html';
+        });
+    </script>
+</body>
+</html>
