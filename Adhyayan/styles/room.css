@@ -1,3 +1,9 @@
+body {
+  background-color: white; /* Set the background of the entire body to white */
+  color: black; /* Ensure text is black */
+  padding-top: 4rem;
+}
+
 .container {
   margin-top: 74px;
   height: clac(100vh - 74px);
@@ -12,7 +18,7 @@
 }
 
 #members__container {
-  background-color: #262625;
+  background-color: #d3d3d3; /* Changed from dark grey (#262625) to light grey */
   border-right: 1px solid #797a79;
   overflow-y: auto;
   width: 90%;
@@ -23,11 +29,12 @@
 }
 
 #members__count {
-  background-color: #1d1d1c;
+  background-color: #dcdcdc; /* Changed from dark grey (#1d1d1c) to light grey */
   padding: 7px 15px;
   font-size: 14px;
   font-weight: 600;
   border-radius: 5px;
+  color: black; /* Set text color to black */
 }
 
 #members__header {
@@ -37,8 +44,9 @@
   padding: 0 1rem;
   position: fixed;
   font-size: 18px;
-  background-color: #ff8657;
+  background-color: #007bff; /* Changed from orange (#ff8657) to blue */
   width: 218px;
+  color: black; /* Set text color to black */
 }
 
 #member__list {
@@ -68,14 +76,15 @@
   background-color: #2aca3e;
 }
 
-.member_name{
+.member_name {
   font-size: 14px;
   line-height: 0;
+  color: black; /* Set text color to black */
 }
 
 #messages__container {
   height: calc(100vh - 85px);
-  background-color: #262625;
+  background-color: #d3d3d3; /* Changed from dark grey (#262625) to light grey */
   right: 0;
   position: absolute;
   width: 100%;
@@ -101,39 +110,38 @@
 }
 
 .message__body {
-  background-color: #363739;
+  background-color: #e0e0e0; /* Changed from dark grey (#363739) to light grey */
   border-radius: 10px;
   padding: 10px 15px;
   width: fit-content;
   max-width: 900px;
+  color: black; /* Set text color to black */
 }
 
 .message__body strong {
   font-weight: 600;
-  color: #ede0e0;
+  color: black; /* Changed from #ede0e0 to black */
 }
 
-.message__body__bot{
+.message__body__bot {
   padding: 0 20px;
   max-width: 900px;
   color: #bdbdbd;
 }
 
-
 .message__author {
   margin-right: 10px;
-  color: #2aca3e!important;
-
+  color: #2aca3e !important;
 }
 
 .message__author__bot {
   margin-right: 10px;
-  color: #fa682f!important;
-
+  color: #007bff !important; /* Changed from orange (#fa682f) to blue */
 }
 
 .message__text {
   margin: 0;
+  color: black; /* Set text color to black */
 }
 
 #message__form {
@@ -141,19 +149,19 @@
   position: fixed;
   bottom: 0;
   display: block;
-  background-color: #1a1a1a;
+  background-color: #f0f0f0; /* Changed from dark grey (#1a1a1a) to light grey */
   padding: 1em;
 }
 
 #message__form input {
-  color: #fff;
+  color: black; /* Set text color to black */
   width: 100%;
   border: none;
   border-radius: 5px;
   padding: 18px;
   font-size: 14px;
   box-sizing: border-box;
-  background-color: #3f434a;
+  background-color: #dcdcdc; /* Changed from dark grey (#3f434a) to light grey */
 }
 
 #message__form input:focus {
@@ -174,26 +182,25 @@
   height: 100%;
 }
 
-#stream__box{
-  background-color: #3f434a;
+#stream__box {
+  background-color: #dcdcdc; /* Changed from dark grey (#3f434a) to light grey */
   height: 60vh;
   display: none;
 }
 
-#stream__box .video__container{
-  border: 2px solid #000;
+#stream__box .video__container {
+  border: 2px solid #ffffff; /* Changed from black (#000) to white */
   border-radius: 0;
-  height: 100%!important;
-  width:100%!important;
-
+  height: 100% !important;
+  width: 100% !important;
   background-size: 300px;
 }
 
-#stream__box video{
+#stream__box video {
   border-radius: 0;
 }
 
-#streams__container{
+#streams__container {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -203,34 +210,33 @@
   margin-bottom: 225px;
 }
 
-.video__container{
+.video__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border:2px solid #FF5F1F;
+  border: 2px solid #007bff; /* Changed from orange (#FF5F1F) to blue */
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
   height: 300px;
   width: 300px;
-
   background-image: url("/images/friendlogo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75px;
 }
 
-.video-player{
+.video-player {
   height: 100%;
   width: 100%;
 }
 
-.video-player video{
+.video-player video {
   border-radius: 50%;
 }
 
 @media (max-width: 1400px) {
-  .video__container{
+  .video__container {
     height: 200px;
     width: 200px;
   }
@@ -270,7 +276,7 @@
     width: 100%;
   }
 
-  .video__container{
+  .video__container {
     height: 100px;
     width: 100px;
   }
@@ -302,7 +308,7 @@
   position: fixed;
   bottom: 1rem;
   border-radius: 8px;
-  background-color: #1a1a1a60;
+  background-color: #f0f0f0; /* Changed from dark grey (#1a1a1a60) to light grey */
   padding: 1rem;
   left: 50%;
   display: none;
@@ -313,8 +319,8 @@
 .stream__actions a,
 .stream__actions button {
   cursor: pointer;
-  background-color: #262625;
-  color: #fff;
+  background-color: #d3d3d3; /* Changed from dark grey (#262625) to light grey */
+  color: black; /* Set text color to black */
   border: none;
   display: flex;
   align-items: center;
@@ -328,22 +334,22 @@
 .stream__actions button svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: #ede0e0;
+  fill: black; /* Changed from #ede0e0 to black */
 }
 
 .stream__actions a.active,
 .stream__actions button.active,
 .stream__actions a:hover,
 .stream__actions button:hover {
-  background-color: #FF5F1F;
+  background-color: #007bff; /* Changed from orange (#FF5F1F) to blue */
 }
 
 #join-btn{
-  background-color: #FF5F1F;
+  background-color: #007bff;
   font-size: 18px;
   padding: 25px 50px;
   border: none;
-  color:#fff;
+  color:black;
 
   position: fixed;
   bottom: 1rem;
@@ -351,4 +357,23 @@
   left:50%;
   transform: translateX(-50%);
   cursor: pointer;
+}
+
+#join-btn:hover {
+  background-color: #0056b3; /* Changed from #a74a21 to a darker blue */
+}
+
+.footer {
+  font-weight: 500;
+  margin: 0;
+  padding: 5px 20px;
+  background-color: #dcdcdc; /* Changed from dark grey (#262625) to light grey */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+}
+
+.footer span {
+  color: black; /* Set text color to black */
 }

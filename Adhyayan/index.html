@@ -6,123 +6,321 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adhyayan - Student Portal</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="text-gray-600 body-font">
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+  
+        /* Animation for the heading */
+        .animate__animated {
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        <style>
+        /* Ensure body margin is removed to prevent unwanted spacing */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fix header to the top */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Add padding to the top of the body to account for fixed header height */
+        .content {
+            padding-top: 60px; /* Adjust based on your header height */
+        }
+
+        /* Highlight active link */
+        nav a.active {
+            color: #4a90e2; /* Active link color */
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <header class="bg-white shadow">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Adhyayan</span>
-          </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">First Link</a>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-          </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-      </header>
-    <section class="text-gray-600 body-font">
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Your all-in-one platform for 
-            <br class="hidden lg:inline-block">learning and collaboration
-          </h1>
-          <p class="mb-8 leading-relaxed">Adhyayan is designed to support students with limited bandwidth connectivity. Whether you're collaborating with peers, challenging yourself with quizzes, or accessing essential study materials, Adhyayan has you covered.</p>
-          <div class="flex justify-center">
-            <a href="login.html">
-                <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Log in</button>
+            <a class="flex title-font font-medium items-center text-blue-500 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Adhyayan</span>
             </a>
-            <a href="signup.html">
-                <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Sign Up</button>
-            </a>
-          </div>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a href="#home" class="mr-5 hover:text-blue-500">Home</a>
+                <a href="#goals" class="mr-5 hover:text-blue-500">Goals</a>
+                <a href="#features" class="mr-5 hover:text-blue-500">Features</a>
+                <a href="#contact" class="mr-5 hover:text-blue-500">Contact Us</a>
+            </nav>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img class="object-cover object-center rounded" alt="hero" src="home.jpg">
+    </header>
+
+    <section id="home" class="text-gray-600 body-font bg-gradient-to-r from-blue-100 via-blue-50 to-white py-24">
+        <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900 animate__animated animate__fadeIn animate__delay-1s">
+                    Welcome to <span class="text-blue-500 animate__animated animate__pulse animate__infinite">Adhyayan</span>
+                    <br class="hidden lg:inline-block">
+                </h1>
+                <p class="mb-8 leading-relaxed text-lg">Adhyayan is designed to support students with limited bandwidth connectivity. Whether you're collaborating with peers, challenging yourself with quizzes, or accessing essential study materials, Adhyayan has you covered.</p>
+                <div class="flex justify-center">
+                    <a href="login.html">
+                        <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded-lg text-lg transform transition-transform hover:scale-105">
+                            Log in
+                        </button>
+                    </a>
+                    <a href="signup.html">
+                        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded-lg text-lg transform transition-transform hover:scale-105">
+                            Sign Up
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded-lg shadow-lg transform transition-transform hover:scale-105" alt="hero" src="home.jpg">
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="text-gray-600 body-font">
+    <section id="goals" class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Master Cleanse Reliac Heirloom</h1>
-          </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div class="flex items-center mb-3">
-                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
-                  </div>
-                  <h2 class="text-gray-900 text-lg title-font font-medium">Shooting Stars</h2>
-                </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">EDUCATION REVOLUTION</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Empowering Rural Education Through Innovation</h1>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div class="flex items-center mb-3">
-                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                      <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                  </div>
-                  <h2 class="text-gray-900 text-lg title-font font-medium">The Catalyzer</h2>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <!-- Icon for Virtual Classroom -->
+                                    <path d="M12 4v16m-8-8h16"></path>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Accessible Learning</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Provide students in remote areas with access to virtual classrooms, enabling real-time learning and interaction despite geographic barriers.</p>
+                            <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <!-- Icon for Resource Management -->
+                                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                                    <line x1="4" y1="8" x2="20" y2="8"></line>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Resource Management</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Efficiently manage educational materials with a digital library, ensuring resources are readily available and well-organized for both students and educators.</p>
+                            <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <!-- Icon for Interactive Learning -->
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Interactive Learning</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Foster interactive learning with engaging tools and activities that enhance student participation and understanding of the material.</p>
+                            <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                <div class="flex items-center mb-3">
-                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <circle cx="6" cy="6" r="3"></circle>
-                      <circle cx="6" cy="18" r="3"></circle>
-                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                    </svg>
-                  </div>
-                  <h2 class="text-gray-900 text-lg title-font font-medium">Neptune</h2>
-                </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-                  <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-  </body>
-  
+    </section>
+
+    <section id="features" class="text-gray-600 body-font bg-gray-100">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">OUR FEATURES</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Innovative Features Tailored for Students</h1>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <!-- Icon for Study Materials -->
+                                    <path d="M7 13l3 3 7-7"></path>
+                                    <path d="M3 3v18h18V3H3z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Comprehensive Study Materials</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Access a wide range of study materials, including textbooks, practice papers, and multimedia resources to aid in your learning.</p>
+                            <a class="mt-3 text-blue-500 inline-flex items-center">Explore More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <!-- Icon for Quizzes -->
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9 12h6M9 15h6"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Interactive Quizzes</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Test your knowledge with interactive quizzes that provide immediate feedback and help reinforce your learning.</p>
+                            <a class="mt-3 text-blue-500 inline-flex items-center">Discover More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <!-- Icon for Chat Support -->
+                                    <path d="M12 16h4v-2h-4v2zm0-4h4V8h-4v4zm-4 4h4v-2H8v2zm0-4h4V8H8v4z"></path>
+                                    <path d="M1 4v16l4-4h14V4H1z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">24/7 Chat Support</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Receive instant help and support from our team with our 24/7 chat support feature, available whenever you need assistance.</p>
+                            <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="text-gray-600 body-font bg-blue-100">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div class="lg:w-1/3 md:w-1/2 bg-white p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Contact Us</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Have questions or feedback? We’d love to hear from you. Fill out the form below and we’ll get back to you as soon as possible.</p>
+                <form>
+                    <div class="relative mb-4">
+                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input type="text" id="name" name="name" class="w-full bg-gray-100 border border-gray-300 focus:outline-none focus:border-blue-500 text-base py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                        <input type="email" id="email" name="email" class="w-full bg-gray-100 border border-gray-300 focus:outline-none focus:border-blue-500 text-base py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea id="message" name="message" class="w-full bg-gray-100 border border-gray-300 focus:outline-none focus:border-blue-500 text-base py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Send</button>
+                </form>
+            </div>
+            <div class="lg:w-2/3 md:w-1/2 bg-blue-100 p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Address</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">12/10, Chembur, Mumbai - 400084</p>
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Phone</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">+1 234 567 8901</p>
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Email</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">adhyayan@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-gray-600 body-font bg-gray-200">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Adhyayan
+                <a href="https://twitter.com/yourcompany" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Adhyayan</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://www.facebook.com/yourcompany" class="text-gray-500" rel="noopener noreferrer" target="_blank">
+                    <svg fill="currentColor" stroke="currentColor" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 12h-6v-2h4V7h-4V5h6v7h6v2h-6v7z"></path>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/yourcompany" class="ml-3 text-gray-500" rel="noopener noreferrer" target="_blank">
+                    <svg fill="currentColor" stroke="currentColor" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.1.9A5.46 5.46 0 0 0 22.4 2a10.92 10.92 0 0 1-3.4 1.3A5.47 5.47 0 0 0 16 3a5.42 5.42 0 0 0-5.42 5.42c0 .42.05.83.14 1.22A15.5 15.5 0 0 1 1.6 4.9a5.44 5.44 0 0 0 1.7 7.3 5.38 5.38 0 0 1-2.5-.7v.07a5.43 5.43 0 0 0 4.36 5.3A5.4 5.4 0 0 1 .9 18a5.48 5.48 0 0 0 5.1 3.8A10.8 10.8 0 0 1 0 20a15.5 15.5 0 0 0 8.4 2.5c10.1 0 15.7-8.4 15.7-15.7 0-.24-.01-.48-.02-.71A11.15 11.15 0 0 0 24 4.8a10.97 10.97 0 0 1-3.1 3.3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/yourcompany" class="ml-3 text-gray-500" rel="noopener noreferrer" target="_blank">
+                    <svg fill="currentColor" stroke="currentColor" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 0H2C.9 0 0 .9 0 2v20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6.9 20H4.1v-9.2h2.8V20zM5.5 10.5c-.9 0-1.6-.7-1.6-1.6s.7-1.6 1.6-1.6 1.6.7 1.6 1.6-.7 1.6-1.6 1.6zM20 20h-2.8v-4.8c0-2.7-3.3-2.5-3.3 0v4.8H11v-9.2h2.8v1.2c.4-.7 1.5-1.4 2.8-1.4 2.1 0 3.7 1.4 3.7 4.2v5.2z"></path>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            function changeActiveLink() {
+                let index = sections.length;
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+                navLinks.forEach((link) => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            }
+
+            changeActiveLink();
+            window.addEventListener('scroll', changeActiveLink);
+        });
+    </script>
+</body>
+
+</html>
